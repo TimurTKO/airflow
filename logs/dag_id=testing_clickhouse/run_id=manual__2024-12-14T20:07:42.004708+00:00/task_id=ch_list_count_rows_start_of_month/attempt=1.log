@@ -1,0 +1,21 @@
+[2024-12-14T20:07:43.538+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-14T20:07:43.552+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: testing_clickhouse.ch_list_count_rows_start_of_month manual__2024-12-14T20:07:42.004708+00:00 [queued]>
+[2024-12-14T20:07:43.559+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: testing_clickhouse.ch_list_count_rows_start_of_month manual__2024-12-14T20:07:42.004708+00:00 [queued]>
+[2024-12-14T20:07:43.559+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 3
+[2024-12-14T20:07:43.569+0000] {taskinstance.py:2889} INFO - Executing <Task(ClickHouseOperatorExtended): ch_list_count_rows_start_of_month> on 2024-12-14 20:07:42.004708+00:00
+[2024-12-14T20:07:43.576+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=127) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-14T20:07:43.577+0000] {standard_task_runner.py:72} INFO - Started process 128 to run task
+[2024-12-14T20:07:43.577+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'testing_clickhouse', 'ch_list_count_rows_start_of_month', 'manual__2024-12-14T20:07:42.004708+00:00', '--job-id', '106', '--raw', '--subdir', 'DAGS_FOLDER/test_clickhouse.py', '--cfg-path', '/tmp/tmp8vmt1px8']
+[2024-12-14T20:07:43.578+0000] {standard_task_runner.py:105} INFO - Job 106: Subtask ch_list_count_rows_start_of_month
+[2024-12-14T20:07:43.611+0000] {task_command.py:467} INFO - Running <TaskInstance: testing_clickhouse.ch_list_count_rows_start_of_month manual__2024-12-14T20:07:42.004708+00:00 [running]> on host 8c88515bb343
+[2024-12-14T20:07:43.672+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Smalch' AIRFLOW_CTX_DAG_ID='testing_clickhouse' AIRFLOW_CTX_TASK_ID='ch_list_count_rows_start_of_month' AIRFLOW_CTX_EXECUTION_DATE='2024-12-14T20:07:42.004708+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-14T20:07:42.004708+00:00'
+[2024-12-14T20:07:43.672+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-14T20:07:43.681+0000] {base.py:84} INFO - Retrieving connection 'clickhouse'
+[2024-12-14T20:07:43.681+0000] {clickhouse.py:79} INFO - SELECT now() as version
+[2024-12-14T20:07:43.814+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-14T20:07:43.814+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=testing_clickhouse, task_id=ch_list_count_rows_start_of_month, run_id=manual__2024-12-14T20:07:42.004708+00:00, execution_date=20241214T200742, start_date=20241214T200743, end_date=20241214T200743
+[2024-12-14T20:07:43.871+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-14T20:07:43.888+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-14T20:07:43.889+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

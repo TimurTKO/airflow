@@ -1,0 +1,7 @@
+airflow-clickhouse-plugin
+airflow-clickhouse-plugin[common.sql]
+clickhouse-cityhash 
+lz4
+apache-airflow-providers-apache-spark
+apache-airflow-providers-common-compat
+sedona
