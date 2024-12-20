@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 from airflow.decorators import dag, task
 default_args={
     "owner": "Smalch",
-    "depends_on_past": False,
+    "depends_on_past": False, # if the past is failed, the next one will run
     "retries": 0
 }
 ram = 12
