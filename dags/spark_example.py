@@ -6,7 +6,7 @@ from airflow.decorators import dag, task
 default_args={
     "owner": "Smalch",
     "depends_on_past": False, # if the past is failed, the next one will run
-    "retries": 0
+    "retries": 0 # if the task is failed, it will retry 0 times
 }
 ram = 12
 cpu = 30*3
