@@ -12,7 +12,7 @@ ram = 12
 cpu = 30*3
 @dag(
     tags=["test", "stocks"],
-    render_template_as_native_obj=True,
+    render_template_as_native_obj=True,  # render template as a python object
     max_active_runs=1,
     #schedule='50 2 * * *',
     schedule=None,
