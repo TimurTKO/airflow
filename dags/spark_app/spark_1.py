@@ -5,7 +5,7 @@ def run():
     data = [("Alice", 1), ("Bob", 2), ("Charlie", 3)]
     df = spark.createDataFrame(data, ["Name", "Value"])
     df.toPandas().to_csv("/opt/airflow/test/df_test.csv", index=False)
-    df = spark.read.csv("/opt/airflow/test/df_test.csv", header=True, inferSchema=True)
+    df = spark.read.csv("/opt/airflow/test/df_test.csv", header=True, inferSchema=True) # inferSchema=True - автоматически определяет тип данных
     df.show()
 
 

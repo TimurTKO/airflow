@@ -2814,3 +2814,363 @@ jinja2.exceptions.TemplateNotFound: test.sql
 [2024-12-23T18:36:06.865+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:36:06.864+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-12-23T18:36:06.876+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:36:06.876+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
 [2024-12-23T18:36:06.891+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.231 seconds
+[2024-12-23T18:36:37.058+0000] {processor.py:186} INFO - Started process (PID=1654) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:36:37.059+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:36:37.061+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:36:37.060+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:36:37.209+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:36:37.208+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:36:37.211+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:36:37.232+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:36:37.231+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:36:37.243+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:36:37.243+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:36:37.258+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.205 seconds
+[2024-12-23T18:37:07.435+0000] {processor.py:186} INFO - Started process (PID=1663) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:37:07.436+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:37:07.439+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:37:07.439+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:37:07.614+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:37:07.613+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:37:07.616+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:37:07.635+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:37:07.635+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:37:07.647+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:37:07.646+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:37:07.661+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.232 seconds
+[2024-12-23T18:37:37.806+0000] {processor.py:186} INFO - Started process (PID=1672) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:37:37.806+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:37:37.809+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:37:37.809+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:37:37.957+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:37:37.956+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:37:37.959+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:37:37.979+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:37:37.979+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:37:37.992+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:37:37.992+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:37:38.007+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.206 seconds
+[2024-12-23T18:38:08.214+0000] {processor.py:186} INFO - Started process (PID=1681) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:38:08.215+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:38:08.217+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:38:08.217+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:38:08.365+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:38:08.364+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:38:08.367+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:38:08.388+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:38:08.387+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:38:08.399+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:38:08.399+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:38:08.414+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.205 seconds
+[2024-12-23T18:38:38.568+0000] {processor.py:186} INFO - Started process (PID=1690) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:38:38.570+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:38:38.572+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:38:38.571+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:38:38.721+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:38:38.720+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:38:38.722+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:38:38.743+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:38:38.743+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:38:38.756+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:38:38.755+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:38:38.769+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.206 seconds
+[2024-12-23T18:39:08.959+0000] {processor.py:186} INFO - Started process (PID=1700) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:39:08.961+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:39:08.963+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:39:08.963+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:39:09.111+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:39:09.110+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:39:09.112+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:39:09.132+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:39:09.131+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:39:09.143+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:39:09.143+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:39:09.156+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.202 seconds
+[2024-12-23T18:39:39.309+0000] {processor.py:186} INFO - Started process (PID=1709) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:39:39.311+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:39:39.314+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:39:39.313+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:39:39.463+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:39:39.462+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:39:39.464+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:39:39.484+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:39:39.484+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:39:39.496+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:39:39.496+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:39:39.510+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.207 seconds
+[2024-12-23T18:40:09.727+0000] {processor.py:186} INFO - Started process (PID=1718) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:40:09.727+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:40:09.729+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:40:09.729+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:40:09.887+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:40:09.886+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:40:09.889+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:40:09.909+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:40:09.908+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:40:09.920+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:40:09.920+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:40:09.935+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.214 seconds
+[2024-12-23T18:40:40.081+0000] {processor.py:186} INFO - Started process (PID=1732) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:40:40.082+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:40:40.084+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:40:40.084+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:40:40.233+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:40:40.232+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:40:40.235+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:40:40.254+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:40:40.254+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:40:40.267+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:40:40.267+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:40:40.283+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.207 seconds
+[2024-12-23T18:41:10.494+0000] {processor.py:186} INFO - Started process (PID=1741) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:41:10.495+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:41:10.497+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:41:10.496+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:41:10.647+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:41:10.647+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:41:10.649+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:41:10.670+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:41:10.670+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:41:10.681+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:41:10.681+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:41:10.694+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.206 seconds
+[2024-12-23T18:41:40.866+0000] {processor.py:186} INFO - Started process (PID=1750) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:41:40.867+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:41:40.869+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:41:40.869+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:41:41.020+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:41:41.019+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:41:41.022+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:41:41.042+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:41:41.041+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:41:41.053+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:41:41.053+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:41:41.068+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.207 seconds
+[2024-12-23T18:42:11.234+0000] {processor.py:186} INFO - Started process (PID=1759) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:42:11.235+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:42:11.237+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:42:11.237+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:42:11.386+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:42:11.385+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:42:11.388+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:42:11.408+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:42:11.408+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:42:11.420+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:42:11.420+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:42:11.433+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.206 seconds
+[2024-12-23T18:42:41.609+0000] {processor.py:186} INFO - Started process (PID=1768) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:42:41.611+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:42:41.613+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:42:41.613+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:42:41.760+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:42:41.759+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:42:41.762+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:42:41.781+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:42:41.781+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:42:41.793+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:42:41.792+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:42:41.806+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.201 seconds
+[2024-12-23T18:43:11.970+0000] {processor.py:186} INFO - Started process (PID=1777) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:43:11.971+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:43:11.973+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:43:11.973+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:43:12.133+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:43:12.132+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:43:12.136+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:43:12.161+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:43:12.161+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:43:12.179+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:43:12.179+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:43:12.197+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.232 seconds
+[2024-12-23T18:43:42.353+0000] {processor.py:186} INFO - Started process (PID=1786) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:43:42.354+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:43:42.356+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:43:42.356+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:43:42.504+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:43:42.503+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:43:42.506+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:43:42.529+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:43:42.529+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:43:42.544+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:43:42.544+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:43:42.561+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.214 seconds
+[2024-12-23T18:44:12.741+0000] {processor.py:186} INFO - Started process (PID=1795) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:44:12.742+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:44:12.744+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:44:12.744+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:44:12.891+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:44:12.890+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:44:12.893+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:44:12.913+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:44:12.913+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:44:12.925+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:44:12.924+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:44:12.939+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.204 seconds
+[2024-12-23T18:44:43.108+0000] {processor.py:186} INFO - Started process (PID=1804) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:44:43.109+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:44:43.111+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:44:43.111+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:44:43.266+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:44:43.265+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:44:43.268+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:44:43.293+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:44:43.293+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:44:43.309+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:44:43.309+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:44:43.326+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.224 seconds
+[2024-12-23T18:45:13.492+0000] {processor.py:186} INFO - Started process (PID=1814) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:45:13.493+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:45:13.495+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:45:13.495+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:45:13.644+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:45:13.643+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:45:13.646+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:45:13.665+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:45:13.665+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:45:13.677+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:45:13.677+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:45:13.691+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.206 seconds
+[2024-12-23T18:45:43.881+0000] {processor.py:186} INFO - Started process (PID=1823) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:45:43.884+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:45:43.886+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:45:43.886+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:45:44.035+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:45:44.034+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:45:44.037+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:45:44.059+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:45:44.059+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:45:44.074+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:45:44.073+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:45:44.087+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.211 seconds
+[2024-12-23T18:46:14.228+0000] {processor.py:186} INFO - Started process (PID=1832) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:46:14.231+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:46:14.232+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:46:14.232+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:46:14.381+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:46:14.380+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:46:14.383+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:46:14.403+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:46:14.403+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:46:14.416+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:46:14.415+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:46:14.429+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.207 seconds
+[2024-12-23T18:46:44.625+0000] {processor.py:186} INFO - Started process (PID=1841) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:46:44.626+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:46:44.628+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:46:44.627+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:46:44.775+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:46:44.774+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:46:44.777+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:46:44.797+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:46:44.797+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:46:44.809+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:46:44.809+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:46:44.824+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.204 seconds
+[2024-12-23T18:47:14.998+0000] {processor.py:186} INFO - Started process (PID=1850) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:47:15.000+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:47:15.002+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:47:15.002+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:47:15.150+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:47:15.149+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:47:15.152+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:47:15.171+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:47:15.171+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:47:15.183+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:47:15.183+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:47:15.196+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.203 seconds
+[2024-12-23T18:47:45.373+0000] {processor.py:186} INFO - Started process (PID=1859) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:47:45.374+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:47:45.376+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:47:45.376+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:47:45.525+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:47:45.524+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:47:45.527+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:47:45.546+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:47:45.545+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:47:45.557+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:47:45.557+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:47:45.571+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.203 seconds
+[2024-12-23T18:48:15.751+0000] {processor.py:186} INFO - Started process (PID=1868) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:48:15.752+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2024-12-23T18:48:15.754+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:48:15.754+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:48:15.903+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:48:15.903+0000] {templater.py:94} ERROR - Failed to resolve template field '_sql'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 92, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test.sql
+[2024-12-23T18:48:15.905+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2024-12-23T18:48:15.926+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:48:15.926+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-23T18:48:15.938+0000] {logging_mixin.py:190} INFO - [2024-12-23T18:48:15.938+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2024-12-23T18:48:15.954+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.208 seconds
