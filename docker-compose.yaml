@@ -88,6 +88,19 @@ x-airflow-common:
       condition: service_healthy
 
 services:
+  # notebook:
+  #   build: 
+  #     context: spark_config
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "8086:8086"
+  #   volumes:
+  #     - /home/septim239:/opt/airflow
+  #   user: "${AIRFLOW_UID:-50000}:0"
+  #   entrypoint: ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8086", "--allow-root", "--no-browser", "--NotebookApp.token='1234'"]
+  #   networks:
+  #     - airflow
+  
   spark-master:
     build: 
       context: spark_config
@@ -105,6 +118,7 @@ services:
       - "4040:4040"
     volumes:
       - /home/septim239:/opt/airflow
+    user: "${AIRFLOW_UID:-50000}:0"
     networks:
       - airflow
 
@@ -123,6 +137,7 @@ services:
       - spark-master
     volumes:
       - /home/septim239:/opt/airflow
+    user: "${AIRFLOW_UID:-50000}:0"
     networks:
       - airflow
 

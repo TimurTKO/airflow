@@ -22,6 +22,7 @@ cpu = 30*3
     default_args=default_args,
     start_date=datetime(2023, 12, 1),
     catchup=False,
+    template_searchpath='dags',
     description='testing connection',
     doc_md=__doc__
 )
@@ -42,7 +43,7 @@ def spark_clickhouse_example():
     ch_list_count_rows_start_of_month = ClickHouseOperatorExtended(
         task_id='ch_list_count_rows_start_of_month',
         clickhouse_conn_id=CLICKHOUSE_CONN_ID,
-        sql='test.sql'
+        sql='include/test.sql'
     )
     
     spark_submit_task >> ch_list_count_rows_start_of_month # >> последовательно, | - паралельное выполнение
