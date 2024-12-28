@@ -137,7 +137,7 @@ services:
       - spark-master
     volumes:
       - /home/septim239:/opt/airflow
-    user: "${AIRFLOW_UID:-50000}:0"
+    user: "${AIRFLOW_UID:-50000}:0" # added this line for user to avoid problems with access rights
     networks:
       - airflow
 
