@@ -83,7 +83,7 @@ x-airflow-common:
   depends_on:
     &airflow-common-depends-on
     redis:
-      condition: service_healthy
+      condition: service_healthy # wait for the Redis to be healthy
     postgres:
       condition: service_healthy
 
