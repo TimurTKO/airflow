@@ -113,9 +113,9 @@ services:
       - SPARK_SSL_ENABLED=no
       - SPARK_MASTER_WEBUI_PORT=8081
     ports:
-      - "8081:8081"
-      - "7077:7077"
-      - "4040:4040"
+      - "8081:8081" # port for spark master web ui
+      - "7077:7077" #
+      - "4040:4040" #
     volumes:
       - /home/septim239:/opt/airflow
     user: "${AIRFLOW_UID:-50000}:0" 
