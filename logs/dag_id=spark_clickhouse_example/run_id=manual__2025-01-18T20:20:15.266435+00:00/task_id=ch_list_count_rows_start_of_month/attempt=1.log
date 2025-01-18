@@ -1,0 +1,21 @@
+[2025-01-18T20:20:16.296+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-01-18T20:20:16.308+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: spark_clickhouse_example.ch_list_count_rows_start_of_month manual__2025-01-18T20:20:15.266435+00:00 [queued]>
+[2025-01-18T20:20:16.316+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: spark_clickhouse_example.ch_list_count_rows_start_of_month manual__2025-01-18T20:20:15.266435+00:00 [queued]>
+[2025-01-18T20:20:16.316+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-01-18T20:20:16.328+0000] {taskinstance.py:2889} INFO - Executing <Task(ClickHouseOperatorExtended): ch_list_count_rows_start_of_month> on 2025-01-18 20:20:15.266435+00:00
+[2025-01-18T20:20:16.335+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=55) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-01-18T20:20:16.336+0000] {standard_task_runner.py:72} INFO - Started process 58 to run task
+[2025-01-18T20:20:16.338+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'spark_clickhouse_example', 'ch_list_count_rows_start_of_month', 'manual__2025-01-18T20:20:15.266435+00:00', '--job-id', '83', '--raw', '--subdir', 'DAGS_FOLDER/test_spark_clickhouse.py', '--cfg-path', '/tmp/tmplqkclu6j']
+[2025-01-18T20:20:16.339+0000] {standard_task_runner.py:105} INFO - Job 83: Subtask ch_list_count_rows_start_of_month
+[2025-01-18T20:20:16.373+0000] {task_command.py:467} INFO - Running <TaskInstance: spark_clickhouse_example.ch_list_count_rows_start_of_month manual__2025-01-18T20:20:15.266435+00:00 [running]> on host 31d2404a3840
+[2025-01-18T20:20:16.447+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='TKO' AIRFLOW_CTX_DAG_ID='spark_clickhouse_example' AIRFLOW_CTX_TASK_ID='ch_list_count_rows_start_of_month' AIRFLOW_CTX_EXECUTION_DATE='2025-01-18T20:20:15.266435+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-01-18T20:20:15.266435+00:00'
+[2025-01-18T20:20:16.448+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-01-18T20:20:16.456+0000] {base.py:84} INFO - Retrieving connection 'clickhouse'
+[2025-01-18T20:20:16.457+0000] {clickhouse.py:79} INFO - SELECT now() as version
+[2025-01-18T20:20:16.828+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-01-18T20:20:16.829+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=spark_clickhouse_example, task_id=ch_list_count_rows_start_of_month, run_id=manual__2025-01-18T20:20:15.266435+00:00, execution_date=20250118T202015, start_date=20250118T202016, end_date=20250118T202016
+[2025-01-18T20:20:16.873+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-01-18T20:20:16.900+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-01-18T20:20:16.904+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

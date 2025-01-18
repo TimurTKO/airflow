@@ -1,0 +1,346 @@
+[2025-01-18T20:17:26.848+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-01-18T20:17:26.861+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: spark_clickhouse_example.spark_submit_job manual__2025-01-18T20:17:24.824887+00:00 [queued]>
+[2025-01-18T20:17:26.868+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: spark_clickhouse_example.spark_submit_job manual__2025-01-18T20:17:24.824887+00:00 [queued]>
+[2025-01-18T20:17:26.869+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-01-18T20:17:26.881+0000] {taskinstance.py:2889} INFO - Executing <Task(SparkSubmitOperator): spark_submit_job> on 2025-01-18 20:17:24.824887+00:00
+[2025-01-18T20:17:26.888+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=57) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-01-18T20:17:26.889+0000] {standard_task_runner.py:72} INFO - Started process 58 to run task
+[2025-01-18T20:17:26.889+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'spark_clickhouse_example', 'spark_submit_job', 'manual__2025-01-18T20:17:24.824887+00:00', '--job-id', '49', '--raw', '--subdir', 'DAGS_FOLDER/test_spark_clickhouse.py', '--cfg-path', '/tmp/tmp3ewi5l5j']
+[2025-01-18T20:17:26.891+0000] {standard_task_runner.py:105} INFO - Job 49: Subtask spark_submit_job
+[2025-01-18T20:17:26.925+0000] {task_command.py:467} INFO - Running <TaskInstance: spark_clickhouse_example.spark_submit_job manual__2025-01-18T20:17:24.824887+00:00 [running]> on host 31d2404a3840
+[2025-01-18T20:17:27.000+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='TKO' AIRFLOW_CTX_DAG_ID='spark_clickhouse_example' AIRFLOW_CTX_TASK_ID='spark_submit_job' AIRFLOW_CTX_EXECUTION_DATE='2025-01-18T20:17:24.824887+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-01-18T20:17:24.824887+00:00'
+[2025-01-18T20:17:27.001+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-01-18T20:17:27.009+0000] {base.py:84} INFO - Retrieving connection 'spark'
+[2025-01-18T20:17:27.010+0000] {spark_submit.py:327} ERROR - Failed to decode base64 keytab: Incorrect padding
+[2025-01-18T20:17:27.011+0000] {spark_submit.py:304} INFO - Could not load connection string spark, defaulting to spark://spark-master:7077
+[2025-01-18T20:17:27.013+0000] {spark_submit.py:473} INFO - Spark-Submit cmd: spark-submit --master spark://spark-master:7077 --packages com.clickhouse.spark:clickhouse-spark-runtime-3.5_2.12:0.8.1,com.clickhouse:clickhouse-jdbc:0.7.0,com.clickhouse:clickhouse-client:0.7.0,com.clickhouse:clickhouse-http-client:0.7.0,org.apache.httpcomponents.client5:httpclient5:5.3.1 --executor-memory 12g --driver-memory 12g --name arrow-spark --verbose --deploy-mode client dags/spark_app/spark_1.py
+[2025-01-18T20:17:28.139+0000] {spark_submit.py:634} INFO - Using properties file: null
+[2025-01-18T20:17:28.238+0000] {spark_submit.py:634} INFO - Parsed arguments:
+[2025-01-18T20:17:28.239+0000] {spark_submit.py:634} INFO - master                  spark://spark-master:7077
+[2025-01-18T20:17:28.239+0000] {spark_submit.py:634} INFO - remote                  null
+[2025-01-18T20:17:28.240+0000] {spark_submit.py:634} INFO - deployMode              client
+[2025-01-18T20:17:28.240+0000] {spark_submit.py:634} INFO - executorMemory          12g
+[2025-01-18T20:17:28.241+0000] {spark_submit.py:634} INFO - executorCores           null
+[2025-01-18T20:17:28.241+0000] {spark_submit.py:634} INFO - totalExecutorCores      null
+[2025-01-18T20:17:28.241+0000] {spark_submit.py:634} INFO - propertiesFile          null
+[2025-01-18T20:17:28.241+0000] {spark_submit.py:634} INFO - driverMemory            12g
+[2025-01-18T20:17:28.241+0000] {spark_submit.py:634} INFO - driverCores             null
+[2025-01-18T20:17:28.242+0000] {spark_submit.py:634} INFO - driverExtraClassPath    null
+[2025-01-18T20:17:28.242+0000] {spark_submit.py:634} INFO - driverExtraLibraryPath  null
+[2025-01-18T20:17:28.242+0000] {spark_submit.py:634} INFO - driverExtraJavaOptions  null
+[2025-01-18T20:17:28.242+0000] {spark_submit.py:634} INFO - supervise               false
+[2025-01-18T20:17:28.242+0000] {spark_submit.py:634} INFO - queue                   null
+[2025-01-18T20:17:28.243+0000] {spark_submit.py:634} INFO - numExecutors            null
+[2025-01-18T20:17:28.243+0000] {spark_submit.py:634} INFO - files                   null
+[2025-01-18T20:17:28.243+0000] {spark_submit.py:634} INFO - pyFiles                 null
+[2025-01-18T20:17:28.243+0000] {spark_submit.py:634} INFO - archives                null
+[2025-01-18T20:17:28.243+0000] {spark_submit.py:634} INFO - mainClass               null
+[2025-01-18T20:17:28.244+0000] {spark_submit.py:634} INFO - primaryResource         file:/opt/***/dags/spark_app/spark_1.py
+[2025-01-18T20:17:28.244+0000] {spark_submit.py:634} INFO - name                    arrow-spark
+[2025-01-18T20:17:28.244+0000] {spark_submit.py:634} INFO - childArgs               []
+[2025-01-18T20:17:28.244+0000] {spark_submit.py:634} INFO - jars                    null
+[2025-01-18T20:17:28.244+0000] {spark_submit.py:634} INFO - packages                com.clickhouse.spark:clickhouse-spark-runtime-3.5_2.12:0.8.1,com.clickhouse:clickhouse-jdbc:0.7.0,com.clickhouse:clickhouse-client:0.7.0,com.clickhouse:clickhouse-http-client:0.7.0,org.apache.httpcomponents.client5:httpclient5:5.3.1
+[2025-01-18T20:17:28.244+0000] {spark_submit.py:634} INFO - packagesExclusions      null
+[2025-01-18T20:17:28.245+0000] {spark_submit.py:634} INFO - repositories            null
+[2025-01-18T20:17:28.245+0000] {spark_submit.py:634} INFO - verbose                 true
+[2025-01-18T20:17:28.245+0000] {spark_submit.py:634} INFO - 
+[2025-01-18T20:17:28.245+0000] {spark_submit.py:634} INFO - Spark properties used, including those specified through
+[2025-01-18T20:17:28.245+0000] {spark_submit.py:634} INFO - --conf and those from the properties file null:
+[2025-01-18T20:17:28.245+0000] {spark_submit.py:634} INFO - (spark.driver.memory,12g)
+[2025-01-18T20:17:28.246+0000] {spark_submit.py:634} INFO - 
+[2025-01-18T20:17:28.246+0000] {spark_submit.py:634} INFO - 
+[2025-01-18T20:17:28.363+0000] {spark_submit.py:634} INFO - :: loading settings :: url = jar:file:/home/***/.local/lib/python3.12/site-packages/pyspark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+[2025-01-18T20:17:28.435+0000] {spark_submit.py:634} INFO - Ivy Default Cache set to: /home/***/.ivy2/cache
+[2025-01-18T20:17:28.435+0000] {spark_submit.py:634} INFO - The jars for the packages stored in: /home/***/.ivy2/jars
+[2025-01-18T20:17:28.439+0000] {spark_submit.py:634} INFO - com.clickhouse.spark#clickhouse-spark-runtime-3.5_2.12 added as a dependency
+[2025-01-18T20:17:28.439+0000] {spark_submit.py:634} INFO - com.clickhouse#clickhouse-jdbc added as a dependency
+[2025-01-18T20:17:28.440+0000] {spark_submit.py:634} INFO - com.clickhouse#clickhouse-client added as a dependency
+[2025-01-18T20:17:28.440+0000] {spark_submit.py:634} INFO - com.clickhouse#clickhouse-http-client added as a dependency
+[2025-01-18T20:17:28.440+0000] {spark_submit.py:634} INFO - org.apache.httpcomponents.client5#httpclient5 added as a dependency
+[2025-01-18T20:17:28.440+0000] {spark_submit.py:634} INFO - :: resolving dependencies :: org.apache.spark#spark-submit-parent-9f18527d-b69f-4663-971f-e2fcce9e83fa;1.0
+[2025-01-18T20:17:28.440+0000] {spark_submit.py:634} INFO - confs: [default]
+[2025-01-18T20:17:28.887+0000] {spark_submit.py:634} INFO - found com.clickhouse.spark#clickhouse-spark-runtime-3.5_2.12;0.8.1 in central
+[2025-01-18T20:17:28.950+0000] {spark_submit.py:634} INFO - found com.clickhouse#clickhouse-jdbc;0.7.0 in central
+[2025-01-18T20:17:29.010+0000] {spark_submit.py:634} INFO - found com.clickhouse#clickhouse-client;0.7.0 in central
+[2025-01-18T20:17:29.060+0000] {spark_submit.py:634} INFO - found com.clickhouse#clickhouse-data;0.7.0 in central
+[2025-01-18T20:17:29.124+0000] {spark_submit.py:634} INFO - found com.clickhouse#clickhouse-http-client;0.7.0 in central
+[2025-01-18T20:17:30.005+0000] {spark_submit.py:634} INFO - found org.apache.httpcomponents.client5#httpclient5;5.3.1 in central
+[2025-01-18T20:17:30.408+0000] {spark_submit.py:634} INFO - found org.apache.httpcomponents.core5#httpcore5;5.2.4 in central
+[2025-01-18T20:17:30.464+0000] {spark_submit.py:634} INFO - found org.apache.httpcomponents.core5#httpcore5-h2;5.2.4 in central
+[2025-01-18T20:17:30.589+0000] {spark_submit.py:634} INFO - found org.slf4j#slf4j-api;1.7.36 in central
+[2025-01-18T20:17:30.611+0000] {spark_submit.py:634} INFO - downloading https://repo1.maven.org/maven2/com/clickhouse/spark/clickhouse-spark-runtime-3.5_2.12/0.8.1/clickhouse-spark-runtime-3.5_2.12-0.8.1.jar ...
+[2025-01-18T20:17:30.684+0000] {spark_submit.py:634} INFO - [SUCCESSFUL ] com.clickhouse.spark#clickhouse-spark-runtime-3.5_2.12;0.8.1!clickhouse-spark-runtime-3.5_2.12.jar (87ms)
+[2025-01-18T20:17:30.700+0000] {spark_submit.py:634} INFO - downloading https://repo1.maven.org/maven2/com/clickhouse/clickhouse-jdbc/0.7.0/clickhouse-jdbc-0.7.0.jar ...
+[2025-01-18T20:17:30.730+0000] {spark_submit.py:634} INFO - [SUCCESSFUL ] com.clickhouse#clickhouse-jdbc;0.7.0!clickhouse-jdbc.jar (45ms)
+[2025-01-18T20:17:30.746+0000] {spark_submit.py:634} INFO - downloading https://repo1.maven.org/maven2/com/clickhouse/clickhouse-client/0.7.0/clickhouse-client-0.7.0.jar ...
+[2025-01-18T20:17:30.763+0000] {spark_submit.py:634} INFO - [SUCCESSFUL ] com.clickhouse#clickhouse-client;0.7.0!clickhouse-client.jar (32ms)
+[2025-01-18T20:17:30.777+0000] {spark_submit.py:634} INFO - downloading https://repo1.maven.org/maven2/com/clickhouse/clickhouse-http-client/0.7.0/clickhouse-http-client-0.7.0.jar ...
+[2025-01-18T20:17:30.792+0000] {spark_submit.py:634} INFO - [SUCCESSFUL ] com.clickhouse#clickhouse-http-client;0.7.0!clickhouse-http-client.jar (27ms)
+[2025-01-18T20:17:30.806+0000] {spark_submit.py:634} INFO - downloading https://repo1.maven.org/maven2/org/apache/httpcomponents/client5/httpclient5/5.3.1/httpclient5-5.3.1.jar ...
+[2025-01-18T20:17:30.828+0000] {spark_submit.py:634} INFO - [SUCCESSFUL ] org.apache.httpcomponents.client5#httpclient5;5.3.1!httpclient5.jar (36ms)
+[2025-01-18T20:17:30.842+0000] {spark_submit.py:634} INFO - downloading https://repo1.maven.org/maven2/com/clickhouse/clickhouse-data/0.7.0/clickhouse-data-0.7.0.jar ...
+[2025-01-18T20:17:30.862+0000] {spark_submit.py:634} INFO - [SUCCESSFUL ] com.clickhouse#clickhouse-data;0.7.0!clickhouse-data.jar (32ms)
+[2025-01-18T20:17:30.877+0000] {spark_submit.py:634} INFO - downloading https://repo1.maven.org/maven2/org/apache/httpcomponents/core5/httpcore5/5.2.4/httpcore5-5.2.4.jar ...
+[2025-01-18T20:17:30.895+0000] {spark_submit.py:634} INFO - [SUCCESSFUL ] org.apache.httpcomponents.core5#httpcore5;5.2.4!httpcore5.jar (32ms)
+[2025-01-18T20:17:30.911+0000] {spark_submit.py:634} INFO - downloading https://repo1.maven.org/maven2/org/apache/httpcomponents/core5/httpcore5-h2/5.2.4/httpcore5-h2-5.2.4.jar ...
+[2025-01-18T20:17:30.926+0000] {spark_submit.py:634} INFO - [SUCCESSFUL ] org.apache.httpcomponents.core5#httpcore5-h2;5.2.4!httpcore5-h2.jar (30ms)
+[2025-01-18T20:17:30.940+0000] {spark_submit.py:634} INFO - downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar ...
+[2025-01-18T20:17:30.953+0000] {spark_submit.py:634} INFO - [SUCCESSFUL ] org.slf4j#slf4j-api;1.7.36!slf4j-api.jar (27ms)
+[2025-01-18T20:17:30.953+0000] {spark_submit.py:634} INFO - :: resolution report :: resolve 2157ms :: artifacts dl 356ms
+[2025-01-18T20:17:30.953+0000] {spark_submit.py:634} INFO - :: modules in use:
+[2025-01-18T20:17:30.953+0000] {spark_submit.py:634} INFO - com.clickhouse#clickhouse-client;0.7.0 from central in [default]
+[2025-01-18T20:17:30.954+0000] {spark_submit.py:634} INFO - com.clickhouse#clickhouse-data;0.7.0 from central in [default]
+[2025-01-18T20:17:30.954+0000] {spark_submit.py:634} INFO - com.clickhouse#clickhouse-http-client;0.7.0 from central in [default]
+[2025-01-18T20:17:30.954+0000] {spark_submit.py:634} INFO - com.clickhouse#clickhouse-jdbc;0.7.0 from central in [default]
+[2025-01-18T20:17:30.954+0000] {spark_submit.py:634} INFO - com.clickhouse.spark#clickhouse-spark-runtime-3.5_2.12;0.8.1 from central in [default]
+[2025-01-18T20:17:30.954+0000] {spark_submit.py:634} INFO - org.apache.httpcomponents.client5#httpclient5;5.3.1 from central in [default]
+[2025-01-18T20:17:30.955+0000] {spark_submit.py:634} INFO - org.apache.httpcomponents.core5#httpcore5;5.2.4 from central in [default]
+[2025-01-18T20:17:30.955+0000] {spark_submit.py:634} INFO - org.apache.httpcomponents.core5#httpcore5-h2;5.2.4 from central in [default]
+[2025-01-18T20:17:30.955+0000] {spark_submit.py:634} INFO - org.slf4j#slf4j-api;1.7.36 from central in [default]
+[2025-01-18T20:17:30.955+0000] {spark_submit.py:634} INFO - :: evicted modules:
+[2025-01-18T20:17:30.955+0000] {spark_submit.py:634} INFO - com.clickhouse#clickhouse-http-client;0.7.0-SNAPSHOT by [com.clickhouse#clickhouse-http-client;0.7.0] in [default]
+[2025-01-18T20:17:30.955+0000] {spark_submit.py:634} INFO - ---------------------------------------------------------------------
+[2025-01-18T20:17:30.956+0000] {spark_submit.py:634} INFO - |                  |            modules            ||   artifacts   |
+[2025-01-18T20:17:30.956+0000] {spark_submit.py:634} INFO - |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+[2025-01-18T20:17:30.956+0000] {spark_submit.py:634} INFO - ---------------------------------------------------------------------
+[2025-01-18T20:17:30.956+0000] {spark_submit.py:634} INFO - |      default     |   10  |   9   |   9   |   1   ||   9   |   9   |
+[2025-01-18T20:17:30.956+0000] {spark_submit.py:634} INFO - ---------------------------------------------------------------------
+[2025-01-18T20:17:30.958+0000] {spark_submit.py:634} INFO - :: retrieving :: org.apache.spark#spark-submit-parent-9f18527d-b69f-4663-971f-e2fcce9e83fa
+[2025-01-18T20:17:30.958+0000] {spark_submit.py:634} INFO - confs: [default]
+[2025-01-18T20:17:30.973+0000] {spark_submit.py:634} INFO - 9 artifacts copied, 0 already retrieved (5143kB/15ms)
+[2025-01-18T20:17:31.124+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:31 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-01-18T20:17:31.274+0000] {spark_submit.py:634} INFO - Main class:
+[2025-01-18T20:17:31.274+0000] {spark_submit.py:634} INFO - org.apache.spark.deploy.PythonRunner
+[2025-01-18T20:17:31.275+0000] {spark_submit.py:634} INFO - Arguments:
+[2025-01-18T20:17:31.275+0000] {spark_submit.py:634} INFO - file:/opt/***/dags/spark_app/spark_1.py
+[2025-01-18T20:17:31.275+0000] {spark_submit.py:634} INFO - file:///home/***/.ivy2/jars/com.clickhouse.spark_clickhouse-spark-runtime-3.5_2.12-0.8.1.jar,file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-jdbc-0.7.0.jar,file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-client-0.7.0.jar,file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-http-client-0.7.0.jar,file:///home/***/.ivy2/jars/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar,file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-data-0.7.0.jar,file:///home/***/.ivy2/jars/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar,file:///home/***/.ivy2/jars/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar,file:///home/***/.ivy2/jars/org.slf4j_slf4j-api-1.7.36.jar
+[2025-01-18T20:17:31.278+0000] {spark_submit.py:634} INFO - Spark config:
+[2025-01-18T20:17:31.278+0000] {spark_submit.py:634} INFO - (spark.app.name,arrow-spark)
+[2025-01-18T20:17:31.278+0000] {spark_submit.py:634} INFO - (spark.app.submitTime,1737231451260)
+[2025-01-18T20:17:31.278+0000] {spark_submit.py:634} INFO - (spark.driver.memory,12g)
+[2025-01-18T20:17:31.279+0000] {spark_submit.py:634} INFO - (spark.executor.memory,12g)
+[2025-01-18T20:17:31.279+0000] {spark_submit.py:634} INFO - (spark.files,file:///home/***/.ivy2/jars/com.clickhouse.spark_clickhouse-spark-runtime-3.5_2.12-0.8.1.jar,file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-jdbc-0.7.0.jar,file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-client-0.7.0.jar,file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-http-client-0.7.0.jar,file:///home/***/.ivy2/jars/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar,file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-data-0.7.0.jar,file:///home/***/.ivy2/jars/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar,file:///home/***/.ivy2/jars/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar,file:///home/***/.ivy2/jars/org.slf4j_slf4j-api-1.7.36.jar)
+[2025-01-18T20:17:31.279+0000] {spark_submit.py:634} INFO - (spark.jars,file:///home/***/.ivy2/jars/com.clickhouse.spark_clickhouse-spark-runtime-3.5_2.12-0.8.1.jar,file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-jdbc-0.7.0.jar,file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-client-0.7.0.jar,file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-http-client-0.7.0.jar,file:///home/***/.ivy2/jars/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar,file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-data-0.7.0.jar,file:///home/***/.ivy2/jars/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar,file:///home/***/.ivy2/jars/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar,file:///home/***/.ivy2/jars/org.slf4j_slf4j-api-1.7.36.jar)
+[2025-01-18T20:17:31.279+0000] {spark_submit.py:634} INFO - (spark.master,spark://spark-master:7077)
+[2025-01-18T20:17:31.280+0000] {spark_submit.py:634} INFO - (spark.repl.local.jars,file:///home/***/.ivy2/jars/com.clickhouse.spark_clickhouse-spark-runtime-3.5_2.12-0.8.1.jar,file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-jdbc-0.7.0.jar,file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-client-0.7.0.jar,file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-http-client-0.7.0.jar,file:///home/***/.ivy2/jars/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar,file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-data-0.7.0.jar,file:///home/***/.ivy2/jars/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar,file:///home/***/.ivy2/jars/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar,file:///home/***/.ivy2/jars/org.slf4j_slf4j-api-1.7.36.jar)
+[2025-01-18T20:17:31.280+0000] {spark_submit.py:634} INFO - (spark.submit.deployMode,client)
+[2025-01-18T20:17:31.280+0000] {spark_submit.py:634} INFO - (spark.submit.pyFiles,/home/***/.ivy2/jars/com.clickhouse.spark_clickhouse-spark-runtime-3.5_2.12-0.8.1.jar,/home/***/.ivy2/jars/com.clickhouse_clickhouse-jdbc-0.7.0.jar,/home/***/.ivy2/jars/com.clickhouse_clickhouse-client-0.7.0.jar,/home/***/.ivy2/jars/com.clickhouse_clickhouse-http-client-0.7.0.jar,/home/***/.ivy2/jars/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar,/home/***/.ivy2/jars/com.clickhouse_clickhouse-data-0.7.0.jar,/home/***/.ivy2/jars/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar,/home/***/.ivy2/jars/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar,/home/***/.ivy2/jars/org.slf4j_slf4j-api-1.7.36.jar)
+[2025-01-18T20:17:31.281+0000] {spark_submit.py:634} INFO - Classpath elements:
+[2025-01-18T20:17:31.281+0000] {spark_submit.py:634} INFO - file:///home/***/.ivy2/jars/com.clickhouse.spark_clickhouse-spark-runtime-3.5_2.12-0.8.1.jar
+[2025-01-18T20:17:31.281+0000] {spark_submit.py:634} INFO - file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-jdbc-0.7.0.jar
+[2025-01-18T20:17:31.281+0000] {spark_submit.py:634} INFO - file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-client-0.7.0.jar
+[2025-01-18T20:17:31.281+0000] {spark_submit.py:634} INFO - file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-http-client-0.7.0.jar
+[2025-01-18T20:17:31.281+0000] {spark_submit.py:634} INFO - file:///home/***/.ivy2/jars/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar
+[2025-01-18T20:17:31.282+0000] {spark_submit.py:634} INFO - file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-data-0.7.0.jar
+[2025-01-18T20:17:31.282+0000] {spark_submit.py:634} INFO - file:///home/***/.ivy2/jars/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar
+[2025-01-18T20:17:31.282+0000] {spark_submit.py:634} INFO - file:///home/***/.ivy2/jars/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar
+[2025-01-18T20:17:31.282+0000] {spark_submit.py:634} INFO - file:///home/***/.ivy2/jars/org.slf4j_slf4j-api-1.7.36.jar
+[2025-01-18T20:17:31.282+0000] {spark_submit.py:634} INFO - 
+[2025-01-18T20:17:31.283+0000] {spark_submit.py:634} INFO - 
+[2025-01-18T20:17:32.355+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Running Spark version 3.5.4
+[2025-01-18T20:17:32.355+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: OS info Linux, 5.10.0-33-cloud-amd64, amd64
+[2025-01-18T20:17:32.356+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Java version 17.0.13
+[2025-01-18T20:17:32.380+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO ResourceUtils: ==============================================================
+[2025-01-18T20:17:32.381+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2025-01-18T20:17:32.381+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO ResourceUtils: ==============================================================
+[2025-01-18T20:17:32.381+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Submitted application: arrow-spark
+[2025-01-18T20:17:32.400+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(memory -> name: memory, amount: 12288, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2025-01-18T20:17:32.407+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO ResourceProfile: Limiting resource is cpu
+[2025-01-18T20:17:32.407+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2025-01-18T20:17:32.445+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SecurityManager: Changing view acls to: default
+[2025-01-18T20:17:32.445+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SecurityManager: Changing modify acls to: default
+[2025-01-18T20:17:32.445+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SecurityManager: Changing view acls groups to:
+[2025-01-18T20:17:32.446+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SecurityManager: Changing modify acls groups to:
+[2025-01-18T20:17:32.446+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: default; groups with view permissions: EMPTY; users with modify permissions: default; groups with modify permissions: EMPTY
+[2025-01-18T20:17:32.642+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO Utils: Successfully started service 'sparkDriver' on port 41781.
+[2025-01-18T20:17:32.665+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkEnv: Registering MapOutputTracker
+[2025-01-18T20:17:32.697+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkEnv: Registering BlockManagerMaster
+[2025-01-18T20:17:32.714+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2025-01-18T20:17:32.714+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2025-01-18T20:17:32.717+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2025-01-18T20:17:32.731+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-c79d5452-8902-4302-b0db-8f9bdfd9c3fe
+[2025-01-18T20:17:32.741+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO MemoryStore: MemoryStore started with capacity 7.0 GiB
+[2025-01-18T20:17:32.752+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkEnv: Registering OutputCommitCoordinator
+[2025-01-18T20:17:32.858+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+[2025-01-18T20:17:32.915+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[2025-01-18T20:17:32.948+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Added JAR file:///home/***/.ivy2/jars/com.clickhouse.spark_clickhouse-spark-runtime-3.5_2.12-0.8.1.jar at spark://31d2404a3840:41781/jars/com.clickhouse.spark_clickhouse-spark-runtime-3.5_2.12-0.8.1.jar with timestamp 1737231452348
+[2025-01-18T20:17:32.948+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Added JAR file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-jdbc-0.7.0.jar at spark://31d2404a3840:41781/jars/com.clickhouse_clickhouse-jdbc-0.7.0.jar with timestamp 1737231452348
+[2025-01-18T20:17:32.949+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Added JAR file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-client-0.7.0.jar at spark://31d2404a3840:41781/jars/com.clickhouse_clickhouse-client-0.7.0.jar with timestamp 1737231452348
+[2025-01-18T20:17:32.949+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Added JAR file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-http-client-0.7.0.jar at spark://31d2404a3840:41781/jars/com.clickhouse_clickhouse-http-client-0.7.0.jar with timestamp 1737231452348
+[2025-01-18T20:17:32.949+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Added JAR file:///home/***/.ivy2/jars/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar at spark://31d2404a3840:41781/jars/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar with timestamp 1737231452348
+[2025-01-18T20:17:32.949+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Added JAR file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-data-0.7.0.jar at spark://31d2404a3840:41781/jars/com.clickhouse_clickhouse-data-0.7.0.jar with timestamp 1737231452348
+[2025-01-18T20:17:32.950+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Added JAR file:///home/***/.ivy2/jars/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar at spark://31d2404a3840:41781/jars/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar with timestamp 1737231452348
+[2025-01-18T20:17:32.950+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Added JAR file:///home/***/.ivy2/jars/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar at spark://31d2404a3840:41781/jars/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar with timestamp 1737231452348
+[2025-01-18T20:17:32.950+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Added JAR file:///home/***/.ivy2/jars/org.slf4j_slf4j-api-1.7.36.jar at spark://31d2404a3840:41781/jars/org.slf4j_slf4j-api-1.7.36.jar with timestamp 1737231452348
+[2025-01-18T20:17:32.952+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Added file file:///home/***/.ivy2/jars/com.clickhouse.spark_clickhouse-spark-runtime-3.5_2.12-0.8.1.jar at spark://31d2404a3840:41781/files/com.clickhouse.spark_clickhouse-spark-runtime-3.5_2.12-0.8.1.jar with timestamp 1737231452348
+[2025-01-18T20:17:32.953+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO Utils: Copying /home/***/.ivy2/jars/com.clickhouse.spark_clickhouse-spark-runtime-3.5_2.12-0.8.1.jar to /tmp/spark-43667b22-b75f-46a2-98e0-1e2f2b129b40/userFiles-594445fc-868f-4c42-bda9-a683826183d5/com.clickhouse.spark_clickhouse-spark-runtime-3.5_2.12-0.8.1.jar
+[2025-01-18T20:17:32.964+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Added file file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-jdbc-0.7.0.jar at spark://31d2404a3840:41781/files/com.clickhouse_clickhouse-jdbc-0.7.0.jar with timestamp 1737231452348
+[2025-01-18T20:17:32.965+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO Utils: Copying /home/***/.ivy2/jars/com.clickhouse_clickhouse-jdbc-0.7.0.jar to /tmp/spark-43667b22-b75f-46a2-98e0-1e2f2b129b40/userFiles-594445fc-868f-4c42-bda9-a683826183d5/com.clickhouse_clickhouse-jdbc-0.7.0.jar
+[2025-01-18T20:17:32.970+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Added file file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-client-0.7.0.jar at spark://31d2404a3840:41781/files/com.clickhouse_clickhouse-client-0.7.0.jar with timestamp 1737231452348
+[2025-01-18T20:17:32.970+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO Utils: Copying /home/***/.ivy2/jars/com.clickhouse_clickhouse-client-0.7.0.jar to /tmp/spark-43667b22-b75f-46a2-98e0-1e2f2b129b40/userFiles-594445fc-868f-4c42-bda9-a683826183d5/com.clickhouse_clickhouse-client-0.7.0.jar
+[2025-01-18T20:17:32.976+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Added file file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-http-client-0.7.0.jar at spark://31d2404a3840:41781/files/com.clickhouse_clickhouse-http-client-0.7.0.jar with timestamp 1737231452348
+[2025-01-18T20:17:32.976+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO Utils: Copying /home/***/.ivy2/jars/com.clickhouse_clickhouse-http-client-0.7.0.jar to /tmp/spark-43667b22-b75f-46a2-98e0-1e2f2b129b40/userFiles-594445fc-868f-4c42-bda9-a683826183d5/com.clickhouse_clickhouse-http-client-0.7.0.jar
+[2025-01-18T20:17:32.980+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Added file file:///home/***/.ivy2/jars/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar at spark://31d2404a3840:41781/files/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar with timestamp 1737231452348
+[2025-01-18T20:17:32.983+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO Utils: Copying /home/***/.ivy2/jars/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar to /tmp/spark-43667b22-b75f-46a2-98e0-1e2f2b129b40/userFiles-594445fc-868f-4c42-bda9-a683826183d5/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar
+[2025-01-18T20:17:32.986+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Added file file:///home/***/.ivy2/jars/com.clickhouse_clickhouse-data-0.7.0.jar at spark://31d2404a3840:41781/files/com.clickhouse_clickhouse-data-0.7.0.jar with timestamp 1737231452348
+[2025-01-18T20:17:32.986+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO Utils: Copying /home/***/.ivy2/jars/com.clickhouse_clickhouse-data-0.7.0.jar to /tmp/spark-43667b22-b75f-46a2-98e0-1e2f2b129b40/userFiles-594445fc-868f-4c42-bda9-a683826183d5/com.clickhouse_clickhouse-data-0.7.0.jar
+[2025-01-18T20:17:32.990+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Added file file:///home/***/.ivy2/jars/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar at spark://31d2404a3840:41781/files/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar with timestamp 1737231452348
+[2025-01-18T20:17:32.990+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO Utils: Copying /home/***/.ivy2/jars/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar to /tmp/spark-43667b22-b75f-46a2-98e0-1e2f2b129b40/userFiles-594445fc-868f-4c42-bda9-a683826183d5/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar
+[2025-01-18T20:17:32.995+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Added file file:///home/***/.ivy2/jars/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar at spark://31d2404a3840:41781/files/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar with timestamp 1737231452348
+[2025-01-18T20:17:32.995+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO Utils: Copying /home/***/.ivy2/jars/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar to /tmp/spark-43667b22-b75f-46a2-98e0-1e2f2b129b40/userFiles-594445fc-868f-4c42-bda9-a683826183d5/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar
+[2025-01-18T20:17:32.999+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO SparkContext: Added file file:///home/***/.ivy2/jars/org.slf4j_slf4j-api-1.7.36.jar at spark://31d2404a3840:41781/files/org.slf4j_slf4j-api-1.7.36.jar with timestamp 1737231452348
+[2025-01-18T20:17:32.999+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:32 INFO Utils: Copying /home/***/.ivy2/jars/org.slf4j_slf4j-api-1.7.36.jar to /tmp/spark-43667b22-b75f-46a2-98e0-1e2f2b129b40/userFiles-594445fc-868f-4c42-bda9-a683826183d5/org.slf4j_slf4j-api-1.7.36.jar
+[2025-01-18T20:17:33.069+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark-master:7077...
+[2025-01-18T20:17:33.109+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO TransportClientFactory: Successfully created connection to spark-master/172.18.0.2:7077 after 21 ms (0 ms spent in bootstraps)
+[2025-01-18T20:17:33.240+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20250118201733-0000
+[2025-01-18T20:17:33.252+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 38917.
+[2025-01-18T20:17:33.253+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO NettyBlockTransferService: Server created on 31d2404a3840:38917
+[2025-01-18T20:17:33.254+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2025-01-18T20:17:33.263+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 31d2404a3840, 38917, None)
+[2025-01-18T20:17:33.271+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20250118201733-0000/0 on worker-20250118201610-172.18.0.5-42069 (172.18.0.5:42069) with 4 core(s)
+[2025-01-18T20:17:33.271+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO BlockManagerMasterEndpoint: Registering block manager 31d2404a3840:38917 with 7.0 GiB RAM, BlockManagerId(driver, 31d2404a3840, 38917, None)
+[2025-01-18T20:17:33.271+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO StandaloneSchedulerBackend: Granted executor ID app-20250118201733-0000/0 on hostPort 172.18.0.5:42069 with 4 core(s), 12.0 GiB RAM
+[2025-01-18T20:17:33.272+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 31d2404a3840, 38917, None)
+[2025-01-18T20:17:33.273+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 31d2404a3840, 38917, None)
+[2025-01-18T20:17:33.453+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20250118201733-0000/0 is now RUNNING
+[2025-01-18T20:17:33.537+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+[2025-01-18T20:17:33.725+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+[2025-01-18T20:17:33.743+0000] {spark_submit.py:634} INFO - Traceback (most recent call last):
+[2025-01-18T20:17:33.744+0000] {spark_submit.py:634} INFO - File "/opt/***/dags/spark_app/spark_1.py", line 46, in <module>
+[2025-01-18T20:17:33.744+0000] {spark_submit.py:634} INFO - run()
+[2025-01-18T20:17:33.744+0000] {spark_submit.py:634} INFO - File "/opt/***/dags/spark_app/spark_1.py", line 24, in run
+[2025-01-18T20:17:33.745+0000] {spark_submit.py:634} INFO - spark.sql("use clickhouse")
+[2025-01-18T20:17:33.745+0000] {spark_submit.py:634} INFO - File "/home/***/.local/lib/python3.12/site-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/session.py", line 1631, in sql
+[2025-01-18T20:17:33.745+0000] {spark_submit.py:634} INFO - File "/home/***/.local/lib/python3.12/site-packages/pyspark/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1322, in __call__
+[2025-01-18T20:17:33.745+0000] {spark_submit.py:634} INFO - File "/home/***/.local/lib/python3.12/site-packages/pyspark/python/lib/pyspark.zip/pyspark/errors/exceptions/captured.py", line 185, in deco
+[2025-01-18T20:17:33.748+0000] {spark_submit.py:634} INFO - pyspark.errors.exceptions.captured.IllegalArgumentException25/01/18 20:17:33 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+[2025-01-18T20:17:33.776+0000] {spark_submit.py:634} INFO - : The value of property spark.sql.catalog.clickhouse.user must not be null
+[2025-01-18T20:17:33.777+0000] {spark_submit.py:634} INFO - 
+[2025-01-18T20:17:33.777+0000] {spark_submit.py:634} INFO - JVM stacktrace:
+[2025-01-18T20:17:33.777+0000] {spark_submit.py:634} INFO - java.lang.IllegalArgumentException: The value of property spark.sql.catalog.clickhouse.user must not be null
+[2025-01-18T20:17:33.778+0000] {spark_submit.py:634} INFO - at org.apache.hadoop.thirdparty.com.google.common.base.Preconditions.checkArgument(Preconditions.java:219)
+[2025-01-18T20:17:33.778+0000] {spark_submit.py:634} INFO - at org.apache.hadoop.conf.Configuration.set(Configuration.java:1403)
+[2025-01-18T20:17:33.778+0000] {spark_submit.py:634} INFO - at org.apache.hadoop.conf.Configuration.set(Configuration.java:1384)
+[2025-01-18T20:17:33.778+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.internal.SharedState.$anonfun$x$1$2(SharedState.scala:77)
+[2025-01-18T20:17:33.778+0000] {spark_submit.py:634} INFO - at scala.collection.immutable.HashMap$HashMap1.foreach(HashMap.scala:400)
+[2025-01-18T20:17:33.778+0000] {spark_submit.py:634} INFO - at scala.collection.immutable.HashMap$HashTrieMap.foreach(HashMap.scala:728)
+[2025-01-18T20:17:33.779+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.internal.SharedState.<init>(SharedState.scala:69)
+[2025-01-18T20:17:33.779+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.SparkSession.$anonfun$sharedState$1(SparkSession.scala:143)
+[2025-01-18T20:17:33.779+0000] {spark_submit.py:634} INFO - at scala.Option.getOrElse(Option.scala:189)
+[2025-01-18T20:17:33.779+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.SparkSession.sharedState$lzycompute(SparkSession.scala:143)
+[2025-01-18T20:17:33.779+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.SparkSession.sharedState(SparkSession.scala:142)
+[2025-01-18T20:17:33.779+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.SparkSession.$anonfun$sessionState$2(SparkSession.scala:162)
+[2025-01-18T20:17:33.780+0000] {spark_submit.py:634} INFO - at scala.Option.getOrElse(Option.scala:189)
+[2025-01-18T20:17:33.780+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.SparkSession.sessionState$lzycompute(SparkSession.scala:160)
+[2025-01-18T20:17:33.780+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.SparkSession.sessionState(SparkSession.scala:157)
+[2025-01-18T20:17:33.780+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.SparkSession.$anonfun$sql$2(SparkSession.scala:631)
+[2025-01-18T20:17:33.780+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:138)
+[2025-01-18T20:17:33.780+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.SparkSession.$anonfun$sql$1(SparkSession.scala:630)
+[2025-01-18T20:17:33.781+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+[2025-01-18T20:17:33.781+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:629)
+[2025-01-18T20:17:33.781+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:659)
+[2025-01-18T20:17:33.781+0000] {spark_submit.py:634} INFO - at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2025-01-18T20:17:33.781+0000] {spark_submit.py:634} INFO - at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+[2025-01-18T20:17:33.781+0000] {spark_submit.py:634} INFO - at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2025-01-18T20:17:33.782+0000] {spark_submit.py:634} INFO - at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+[2025-01-18T20:17:33.782+0000] {spark_submit.py:634} INFO - at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+[2025-01-18T20:17:33.782+0000] {spark_submit.py:634} INFO - at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+[2025-01-18T20:17:33.782+0000] {spark_submit.py:634} INFO - at py4j.Gateway.invoke(Gateway.java:282)
+[2025-01-18T20:17:33.782+0000] {spark_submit.py:634} INFO - at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+[2025-01-18T20:17:33.782+0000] {spark_submit.py:634} INFO - at py4j.commands.CallCommand.execute(CallCommand.java:79)
+[2025-01-18T20:17:33.783+0000] {spark_submit.py:634} INFO - at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+[2025-01-18T20:17:33.783+0000] {spark_submit.py:634} INFO - at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+[2025-01-18T20:17:33.783+0000] {spark_submit.py:634} INFO - at java.base/java.lang.Thread.run(Thread.java:840)
+[2025-01-18T20:17:33.783+0000] {spark_submit.py:634} INFO - 
+[2025-01-18T20:17:33.838+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO SparkContext: Invoking stop() from shutdown hook
+[2025-01-18T20:17:33.839+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO SparkContext: SparkContext is stopping with exitCode 0.
+[2025-01-18T20:17:33.861+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO SparkUI: Stopped Spark web UI at http://31d2404a3840:4040
+[2025-01-18T20:17:33.867+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO StandaloneSchedulerBackend: Shutting down all executors
+[2025-01-18T20:17:33.868+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Asking each executor to shut down
+[2025-01-18T20:17:33.899+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+[2025-01-18T20:17:33.907+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO MemoryStore: MemoryStore cleared
+[2025-01-18T20:17:33.907+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO BlockManager: BlockManager stopped
+[2025-01-18T20:17:33.911+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO BlockManagerMaster: BlockManagerMaster stopped
+[2025-01-18T20:17:33.913+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+[2025-01-18T20:17:33.933+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO SparkContext: Successfully stopped SparkContext
+[2025-01-18T20:17:33.933+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO ShutdownHookManager: Shutdown hook called
+[2025-01-18T20:17:33.934+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO ShutdownHookManager: Deleting directory /tmp/spark-bf56bf73-09a2-4864-a4be-88fcd0289f4d
+[2025-01-18T20:17:33.937+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO ShutdownHookManager: Deleting directory /tmp/spark-43667b22-b75f-46a2-98e0-1e2f2b129b40/pyspark-2bd93bde-4264-4d36-8db0-d4dd5e6f9027
+[2025-01-18T20:17:33.940+0000] {spark_submit.py:634} INFO - 25/01/18 20:17:33 INFO ShutdownHookManager: Deleting directory /tmp/spark-43667b22-b75f-46a2-98e0-1e2f2b129b40
+[2025-01-18T20:17:33.984+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/apache/spark/operators/spark_submit.py", line 176, in execute
+    self._hook.submit(self.application)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/apache/spark/hooks/spark_submit.py", line 560, in submit
+    raise AirflowException(
+airflow.exceptions.AirflowException: Cannot execute: spark-submit --master spark://spark-master:7077 --packages com.clickhouse.spark:clickhouse-spark-runtime-3.5_2.12:0.8.1,com.clickhouse:clickhouse-jdbc:0.7.0,com.clickhouse:clickhouse-client:0.7.0,com.clickhouse:clickhouse-http-client:0.7.0,org.apache.httpcomponents.client5:httpclient5:5.3.1 --executor-memory 12g --driver-memory 12g --name arrow-spark --verbose --deploy-mode client dags/spark_app/spark_1.py. Error code is: 1.
+[2025-01-18T20:17:33.987+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=spark_clickhouse_example, task_id=spark_submit_job, run_id=manual__2025-01-18T20:17:24.824887+00:00, execution_date=20250118T201724, start_date=20250118T201726, end_date=20250118T201733
+[2025-01-18T20:17:33.997+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-01-18T20:17:33.998+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 49 for task spark_submit_job (Cannot execute: spark-submit --master spark://spark-master:7077 --packages com.clickhouse.spark:clickhouse-spark-runtime-3.5_2.12:0.8.1,com.clickhouse:clickhouse-jdbc:0.7.0,com.clickhouse:clickhouse-client:0.7.0,com.clickhouse:clickhouse-http-client:0.7.0,org.apache.httpcomponents.client5:httpclient5:5.3.1 --executor-memory 12g --driver-memory 12g --name arrow-spark --verbose --deploy-mode client dags/spark_app/spark_1.py. Error code is: 1.; 58)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/apache/spark/operators/spark_submit.py", line 176, in execute
+    self._hook.submit(self.application)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/apache/spark/hooks/spark_submit.py", line 560, in submit
+    raise AirflowException(
+airflow.exceptions.AirflowException: Cannot execute: spark-submit --master spark://spark-master:7077 --packages com.clickhouse.spark:clickhouse-spark-runtime-3.5_2.12:0.8.1,com.clickhouse:clickhouse-jdbc:0.7.0,com.clickhouse:clickhouse-client:0.7.0,com.clickhouse:clickhouse-http-client:0.7.0,org.apache.httpcomponents.client5:httpclient5:5.3.1 --executor-memory 12g --driver-memory 12g --name arrow-spark --verbose --deploy-mode client dags/spark_app/spark_1.py. Error code is: 1.
+[2025-01-18T20:17:34.032+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-01-18T20:17:34.049+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-01-18T20:17:34.052+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

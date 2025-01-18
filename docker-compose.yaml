@@ -86,6 +86,8 @@ x-airflow-common:
       condition: service_healthy # wait for the Redis to be healthy
     postgres:
       condition: service_healthy
+  env_file:
+    - .env
 
 services:
   # notebook:
@@ -121,6 +123,8 @@ services:
     user: "${AIRFLOW_UID:-50000}:0" 
     networks:
       - airflow
+    env_file:
+      - .env
 
   spark-worker:
     build: 
@@ -140,6 +144,8 @@ services:
     user: "${AIRFLOW_UID:-50000}:0" # added this line for user to avoid problems with access rights
     networks:
       - airflow
+    env_file:
+      - .env
 
   postgres:
     image: postgres:13

@@ -1,3 +1,7 @@
 findspark
-jupyter
-sedona
+clickhouse-connect
+geopandas
+joblib
+scikit-learn
+requests
+shapely

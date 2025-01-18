@@ -1,0 +1,60 @@
+[2025-01-18T20:23:47.632+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-01-18T20:23:47.643+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: spark_clickhouse_example.get_files_and_unite manual__2025-01-18T20:23:22.318037+00:00 [queued]>
+[2025-01-18T20:23:47.650+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: spark_clickhouse_example.get_files_and_unite manual__2025-01-18T20:23:22.318037+00:00 [queued]>
+[2025-01-18T20:23:47.650+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-01-18T20:23:47.660+0000] {taskinstance.py:2889} INFO - Executing <Task(_PySparkDecoratedOperator): get_files_and_unite> on 2025-01-18 20:23:22.318037+00:00
+[2025-01-18T20:23:47.667+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=328) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-01-18T20:23:47.668+0000] {standard_task_runner.py:72} INFO - Started process 329 to run task
+[2025-01-18T20:23:47.668+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'spark_clickhouse_example', 'get_files_and_unite', 'manual__2025-01-18T20:23:22.318037+00:00', '--job-id', '117', '--raw', '--subdir', 'DAGS_FOLDER/test_spark_clickhouse.py', '--cfg-path', '/tmp/tmplkc1u8go']
+[2025-01-18T20:23:47.669+0000] {standard_task_runner.py:105} INFO - Job 117: Subtask get_files_and_unite
+[2025-01-18T20:23:47.700+0000] {task_command.py:467} INFO - Running <TaskInstance: spark_clickhouse_example.get_files_and_unite manual__2025-01-18T20:23:22.318037+00:00 [running]> on host 42cd8ade4520
+[2025-01-18T20:23:47.760+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='TKO' AIRFLOW_CTX_DAG_ID='spark_clickhouse_example' AIRFLOW_CTX_TASK_ID='get_files_and_unite' AIRFLOW_CTX_EXECUTION_DATE='2025-01-18T20:23:22.318037+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-01-18T20:23:22.318037+00:00'
+[2025-01-18T20:23:47.761+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-01-18T20:23:47.768+0000] {base.py:84} INFO - Retrieving connection 'spark'
+[2025-01-18T20:23:57.868+0000] {logging_mixin.py:190} INFO - +---+----------------+------+------------+---------------+------------------+-----------------+-------------+------------------+------+------------+------------+--------------+--------------+-----------+
+|age|       workclass|fnlwgt|   education|educational-num|    marital-status|       occupation| relationship|              race|gender|capital-gain|capital-loss|hours-per-week|native-country|income_>50K|
++---+----------------+------+------------+---------------+------------------+-----------------+-------------+------------------+------+------------+------------+--------------+--------------+-----------+
+| 67|         Private|366425|   Doctorate|             16|          Divorced|  Exec-managerial|Not-in-family|             White|  Male|       99999|           0|            60| United-States|          1|
+| 17|         Private|244602|        12th|              8|     Never-married|    Other-service|    Own-child|             White|  Male|           0|           0|            15| United-States|          0|
+| 31|         Private|174201|   Bachelors|             13|Married-civ-spouse|  Exec-managerial|      Husband|             White|  Male|           0|           0|            40| United-States|          1|
+| 58|       State-gov|110199|     7th-8th|              4|Married-civ-spouse| Transport-moving|      Husband|             White|  Male|           0|           0|            40| United-States|          0|
+| 25|       State-gov|149248|Some-college|             10|     Never-married|    Other-service|Not-in-family|             Black|  Male|           0|           0|            40| United-States|          0|
+| 59|       State-gov|105363|     HS-grad|              9|     Never-married|     Adm-clerical|    Own-child|             White|  Male|           0|           0|            40| United-States|          0|
+| 70|         Private|216390|         9th|              5|Married-civ-spouse|Machine-op-inspct|         Wife|             White|Female|        2653|           0|            40| United-States|          0|
+| 35|Self-emp-not-inc|361888|   Bachelors|             13|Married-civ-spouse|            Sales|      Husband|             White|  Male|           0|           0|            60|         Japan|          0|
+| 28|         Private| 74784|     HS-grad|              9|     Never-married|Handlers-cleaners|Not-in-family|             White|  Male|           0|           0|            50| United-States|          0|
+| 28|         Private|118089|     HS-grad|              9|Married-civ-spouse|  Exec-managerial|      Husband|             White|  Male|        4386|           0|            45| United-States|          1|
+| 21|         Private|138513|Some-college|             10|     Never-married|  Exec-managerial|    Own-child|             White|  Male|           0|           0|            25| United-States|          0|
+| 30|Self-emp-not-inc|100252|     HS-grad|              9|Married-civ-spouse|Machine-op-inspct|    Own-child|Asian-Pac-Islander|  Male|           0|           0|            60|         South|          0|
+| 59|Self-emp-not-inc|241297|Some-college|             10|           Widowed|  Farming-fishing|Not-in-family|             White|Female|        6849|           0|            40| United-States|          0|
+| 20|         Private| 39764|     HS-grad|              9|     Never-married|Handlers-cleaners|    Own-child|             White|  Male|           0|           0|            40| United-States|          0|
+| 45|         Private| 30690|     7th-8th|              4|     Never-married|    Other-service|Not-in-family|             White|  Male|           0|           0|            10| United-States|          0|
+| 76|         Private|316185|     7th-8th|              4|           Widowed|  Protective-serv|Not-in-family|             White|Female|           0|           0|            12| United-States|          0|
+| 30|         Private|110239|        10th|              6|Married-civ-spouse| Transport-moving|      Husband|             White|  Male|           0|           0|            55| United-States|          0|
+| 54|     Federal-gov|278076|     HS-grad|              9|Married-civ-spouse|  Exec-managerial|      Husband|             White|  Male|        5178|           0|            40| United-States|          1|
+| 19|       Local-gov|259169|Some-college|             10|     Never-married|   Prof-specialty|    Own-child|             White|Female|           0|           0|            30| United-States|          0|
+| 44|         Private|136986|   Doctorate|             16|Married-civ-spouse|   Prof-specialty|      Husband|             White|  Male|           0|           0|            50| United-States|          1|
++---+----------------+------+------------+---------------+------------------+-----------------+-------------+------------------+------+------------+------------+--------------+--------------+-----------+
+only showing top 20 rows
+[2025-01-18T20:24:01.979+0000] {logging_mixin.py:190} INFO - +-------+-----+
+|   Name|Value|
++-------+-----+
+|  Alice|    1|
+|    Bob|    2|
+|Charlie|    3|
++-------+-----+
+[2025-01-18T20:24:02.207+0000] {logging_mixin.py:190} INFO - +-------+-----+
+|   Name|Value|
++-------+-----+
+|  Alice|    1|
+|    Bob|    2|
+|Charlie|    3|
++-------+-----+
+[2025-01-18T20:24:02.975+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-01-18T20:24:02.986+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-01-18T20:24:02.987+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=spark_clickhouse_example, task_id=get_files_and_unite, run_id=manual__2025-01-18T20:23:22.318037+00:00, execution_date=20250118T202322, start_date=20250118T202347, end_date=20250118T202402
+[2025-01-18T20:24:03.019+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-01-18T20:24:03.037+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-01-18T20:24:03.041+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

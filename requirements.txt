@@ -2,6 +2,12 @@ airflow-clickhouse-plugin
 airflow-clickhouse-plugin[common.sql]
 clickhouse-cityhash 
 lz4
-apache-airflow-providers-apache-spark
-apache-airflow-providers-common-compat
-sedona
+apache-airflow-providers-apache-spark==4.11.3
+apache-airflow-providers-common-compat==1.2.2
+findspark
+clickhouse-connect
+geopandas
+joblib
+scikit-learn
+requests
+shapely
