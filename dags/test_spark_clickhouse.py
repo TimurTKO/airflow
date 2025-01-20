@@ -76,7 +76,7 @@ def spark_clickhouse_example():
                 ,'spark.executor.memory': f'{ram}g'
                 ,'spark.driver.memory': f'{ram}g'
                 ,"spark.driver.maxResultSize": f"{ram}g"
-                ,"spark.executor.memoryOverhead": f"{ram}g"
+                ,"spark.executor.memoryOverhead": f"{ram}g" 
             }
         )
     def get_files_and_unite(spark: SparkSession, sc: SparkContext):
