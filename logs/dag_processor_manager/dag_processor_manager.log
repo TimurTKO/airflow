@@ -17369,3 +17369,13 @@ File Path                                     PID  Runtime      # DAGs    # Erro
 /opt/airflow/dags/test_clickhouse.py           66  0.00s             1           0  0.33s           2025-01-28T21:42:28                      10
 /opt/airflow/dags/spark_example.py             65  0.01s             1           0  0.07s           2025-01-28T21:42:27                      10
 ================================================================================
+[2025-01-28T21:43:28.640+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.38s           2025-01-28T21:42:58                      10
+/opt/airflow/dags/test_clickhouse.py           75  0.00s             1           0  0.33s           2025-01-28T21:42:58                      10
+/opt/airflow/dags/spark_example.py             74  0.01s             1           0  0.19s           2025-01-28T21:42:58                      10
+================================================================================
