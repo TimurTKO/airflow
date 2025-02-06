@@ -18839,3 +18839,437 @@ File Path                                     PID  Runtime      # DAGs    # Erro
 /opt/airflow/dags/test_clickhouse.py                                 1           0  0.23s           2025-02-05T19:57:30                      10
 /opt/airflow/dags/spark_example.py                                   1           0  0.08s           2025-02-05T19:57:29                      10
 ================================================================================
+[2025-02-05T19:58:01.285+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py    384  0.00s             1           0  0.30s           2025-02-05T19:57:31                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.23s           2025-02-05T19:58:00                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.08s           2025-02-05T19:58:00                      10
+================================================================================
+[2025-02-05T19:58:31.643+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py    393  0.00s             1           0  0.27s           2025-02-05T19:58:01                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.25s           2025-02-05T19:58:30                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.08s           2025-02-05T19:58:30                      10
+================================================================================
+[2025-02-05T19:58:47.885+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-02-05T19:58:47.887+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2025-02-05T19:59:02.039+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.28s           2025-02-05T19:59:01                      10
+/opt/airflow/dags/test_spark_clickhouse.py    402  0.01s             1           0  0.28s           2025-02-05T19:58:31                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.07s           2025-02-05T19:59:01                      10
+================================================================================
+[2025-02-05T19:59:10.426+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-02-06T19:01:24.192+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-02-06T19:01:24.194+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-02-06T19:01:24.195+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-02-06T19:01:24.195+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-02-06T19:01:24.215+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2025-02-06T19:01:24.357+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/spark_example.py             31  0.02s             0           0                                                   0
+/opt/airflow/dags/test_clickhouse.py                                 0           0                                                   0
+/opt/airflow/dags/test_spark_clickhouse.py     30  0.02s             0           0                                                   0
+================================================================================
+[2025-02-06T19:01:54.448+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  1.03s           2025-02-06T19:01:25                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.51s           2025-02-06T19:01:25                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.19s           2025-02-06T19:01:24                      10
+================================================================================
+[2025-02-06T19:02:24.520+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.39s           2025-02-06T19:01:55                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.23s           2025-02-06T19:01:55                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.07s           2025-02-06T19:01:55                      10
+================================================================================
+[2025-02-06T19:02:55.004+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.38s           2025-02-06T19:02:26                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.35s           2025-02-06T19:02:25                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.09s           2025-02-06T19:02:25                      10
+================================================================================
+[2025-02-06T19:03:25.479+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.40s           2025-02-06T19:02:56                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.34s           2025-02-06T19:02:56                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.07s           2025-02-06T19:02:56                      10
+================================================================================
+[2025-02-06T19:03:55.945+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.39s           2025-02-06T19:03:27                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.34s           2025-02-06T19:03:26                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.20s           2025-02-06T19:03:26                      10
+================================================================================
+[2025-02-06T19:04:26.414+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.39s           2025-02-06T19:03:57                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.33s           2025-02-06T19:03:57                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.20s           2025-02-06T19:03:57                      10
+================================================================================
+[2025-02-06T19:04:57.003+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.34s           2025-02-06T19:04:27                      10
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.28s           2025-02-06T19:04:28                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.20s           2025-02-06T19:04:27                      10
+================================================================================
+[2025-02-06T19:05:27.358+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.28s           2025-02-06T19:04:58                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.22s           2025-02-06T19:04:58                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.07s           2025-02-06T19:04:58                      10
+================================================================================
+[2025-02-06T19:05:57.735+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.28s           2025-02-06T19:05:28                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.24s           2025-02-06T19:05:28                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.09s           2025-02-06T19:05:28                      10
+================================================================================
+[2025-02-06T19:06:24.330+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-02-06T19:06:24.332+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2025-02-06T19:06:28.086+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.28s           2025-02-06T19:05:59                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.21s           2025-02-06T19:05:58                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.07s           2025-02-06T19:05:58                      10
+================================================================================
+[2025-02-06T19:06:58.454+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.28s           2025-02-06T19:06:29                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.23s           2025-02-06T19:06:29                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.08s           2025-02-06T19:06:29                      10
+================================================================================
+[2025-02-06T19:07:28.835+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.29s           2025-02-06T19:07:00                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.24s           2025-02-06T19:06:59                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.09s           2025-02-06T19:06:59                      10
+================================================================================
+[2025-02-06T19:07:59.223+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.29s           2025-02-06T19:07:30                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.24s           2025-02-06T19:07:30                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.09s           2025-02-06T19:07:29                      10
+================================================================================
+[2025-02-06T19:08:29.611+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.31s           2025-02-06T19:08:00                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.24s           2025-02-06T19:08:00                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.09s           2025-02-06T19:08:00                      10
+================================================================================
+[2025-02-06T19:08:59.986+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.27s           2025-02-06T19:08:31                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.24s           2025-02-06T19:08:30                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.08s           2025-02-06T19:08:30                      10
+================================================================================
+[2025-02-06T19:09:30.354+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.27s           2025-02-06T19:09:01                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.23s           2025-02-06T19:09:01                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.08s           2025-02-06T19:09:01                      10
+================================================================================
+[2025-02-06T19:10:00.735+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.28s           2025-02-06T19:09:31                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.24s           2025-02-06T19:09:31                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.09s           2025-02-06T19:09:31                      10
+================================================================================
+[2025-02-06T19:10:31.149+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.29s           2025-02-06T19:10:02                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.27s           2025-02-06T19:10:02                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.10s           2025-02-06T19:10:01                      10
+================================================================================
+[2025-02-06T19:11:01.525+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.27s           2025-02-06T19:10:32                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.24s           2025-02-06T19:10:32                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.09s           2025-02-06T19:10:32                      10
+================================================================================
+[2025-02-06T19:11:24.925+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-02-06T19:11:24.927+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2025-02-06T19:11:31.966+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.29s           2025-02-06T19:11:03                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.29s           2025-02-06T19:11:02                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.08s           2025-02-06T19:11:02                      10
+================================================================================
+[2025-02-06T19:12:02.324+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.28s           2025-02-06T19:11:33                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.22s           2025-02-06T19:11:33                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.07s           2025-02-06T19:11:33                      10
+================================================================================
+[2025-02-06T19:12:32.683+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.28s           2025-02-06T19:12:03                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.22s           2025-02-06T19:12:03                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.08s           2025-02-06T19:12:03                      10
+================================================================================
+[2025-02-06T19:13:03.070+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.28s           2025-02-06T19:12:34                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.24s           2025-02-06T19:12:33                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.09s           2025-02-06T19:12:33                      10
+================================================================================
+[2025-02-06T19:13:33.447+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.28s           2025-02-06T19:13:04                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.24s           2025-02-06T19:13:04                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.09s           2025-02-06T19:13:04                      10
+================================================================================
+[2025-02-06T19:14:03.801+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.27s           2025-02-06T19:13:34                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.22s           2025-02-06T19:13:34                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.08s           2025-02-06T19:13:34                      10
+================================================================================
+[2025-02-06T19:14:34.205+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.29s           2025-02-06T19:14:05                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.27s           2025-02-06T19:14:05                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.07s           2025-02-06T19:14:04                      10
+================================================================================
+[2025-02-06T19:15:04.577+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.29s           2025-02-06T19:14:35                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.23s           2025-02-06T19:14:35                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.08s           2025-02-06T19:14:35                      10
+================================================================================
+[2025-02-06T19:15:34.948+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.28s           2025-02-06T19:15:06                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.24s           2025-02-06T19:15:05                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.09s           2025-02-06T19:15:05                      10
+================================================================================
+[2025-02-06T19:16:05.371+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.29s           2025-02-06T19:15:36                      10
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.28s           2025-02-06T19:15:36                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.08s           2025-02-06T19:15:36                      10
+================================================================================
+[2025-02-06T19:16:24.936+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-02-06T19:16:24.938+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2025-02-06T19:16:35.721+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.27s           2025-02-06T19:16:06                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.21s           2025-02-06T19:16:06                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.07s           2025-02-06T19:16:06                      10
+================================================================================
+[2025-02-06T19:17:06.103+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.28s           2025-02-06T19:16:37                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.24s           2025-02-06T19:16:36                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.09s           2025-02-06T19:16:36                      10
+================================================================================
+[2025-02-06T19:17:36.467+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.28s           2025-02-06T19:17:07                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.23s           2025-02-06T19:17:07                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.07s           2025-02-06T19:17:07                      10
+================================================================================
+[2025-02-06T19:18:06.853+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.27s           2025-02-06T19:17:37                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.24s           2025-02-06T19:17:37                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.08s           2025-02-06T19:17:37                      10
+================================================================================
+[2025-02-06T19:18:37.220+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.28s           2025-02-06T19:18:08                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.23s           2025-02-06T19:18:08                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.08s           2025-02-06T19:18:07                      10
+================================================================================
+[2025-02-06T19:19:07.602+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.27s           2025-02-06T19:18:38                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.25s           2025-02-06T19:18:38                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.10s           2025-02-06T19:18:38                      10
+================================================================================
+[2025-02-06T19:19:37.978+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.28s           2025-02-06T19:19:09                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.24s           2025-02-06T19:19:08                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.09s           2025-02-06T19:19:08                      10
+================================================================================
+[2025-02-06T19:20:08.335+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.31s           2025-02-06T19:19:39                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.22s           2025-02-06T19:19:39                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.08s           2025-02-06T19:19:39                      10
+================================================================================
+[2025-02-06T19:20:38.775+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test_spark_clickhouse.py                           1           0  0.29s           2025-02-06T19:20:09                      10
+/opt/airflow/dags/test_clickhouse.py                                 1           0  0.28s           2025-02-06T19:20:09                      10
+/opt/airflow/dags/spark_example.py                                   1           0  0.11s           2025-02-06T19:20:09                      10
+================================================================================
