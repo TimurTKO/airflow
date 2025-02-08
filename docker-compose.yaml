@@ -120,6 +120,7 @@ services:
       - "4040:4040" #
     volumes:
       - /home/septim239:/opt/airflow
+      - /home/septim239:/home/septim239
     user: "${AIRFLOW_UID:-50000}:0" 
     networks:
       - airflow
@@ -141,6 +142,7 @@ services:
       - spark-master
     volumes:
       - /home/septim239:/opt/airflow
+      - /home/septim239:/home/septim239
     user: "${AIRFLOW_UID:-50000}:0" # added this line for user to avoid problems with access rights
     networks:
       - airflow

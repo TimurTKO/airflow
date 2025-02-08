@@ -1,6 +1,7 @@
 from pyspark.sql import SparkSession
 import os
 
+ram = 12
 
 CH_IP = os.getenv('CH_IP')
 CLICKHOUSE_USER = os.getenv('CLICKHOUSE_USER')
@@ -19,6 +20,8 @@ def run():
             .config("spark.sql.catalog.clickhouse.password", CLICKHOUSE_PASSWORD) 
             .config("spark.sql.catalog.clickhouse.database", "default")
             .config("spark.clickhouse.write.format", "json")
+            .config("spark.driver.maxResultSize", f"{ram}g")
+            .config("spark.executor.memoryOverhead", f"{ram}g")
             .getOrCreate()
         )
     sc = spark.sparkContext
