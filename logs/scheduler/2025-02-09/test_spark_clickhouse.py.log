@@ -1,0 +1,14 @@
+[2025-02-09T20:46:53.581+0000] {processor.py:186} INFO - Started process (PID=31) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2025-02-09T20:46:53.582+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2025-02-09T20:46:53.584+0000] {logging_mixin.py:190} INFO - [2025-02-09T20:46:53.583+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2025-02-09T20:46:54.419+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2025-02-09T20:46:54.443+0000] {logging_mixin.py:190} INFO - [2025-02-09T20:46:54.443+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-09T20:46:54.460+0000] {logging_mixin.py:190} INFO - [2025-02-09T20:46:54.460+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2025-02-09T20:46:54.480+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.905 seconds
+[2025-02-09T20:47:24.679+0000] {processor.py:186} INFO - Started process (PID=43) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2025-02-09T20:47:24.679+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2025-02-09T20:47:24.682+0000] {logging_mixin.py:190} INFO - [2025-02-09T20:47:24.681+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2025-02-09T20:47:25.167+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2025-02-09T20:47:25.197+0000] {logging_mixin.py:190} INFO - [2025-02-09T20:47:25.196+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-09T20:47:25.211+0000] {logging_mixin.py:190} INFO - [2025-02-09T20:47:25.211+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2025-02-09T20:47:25.232+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.560 seconds
