@@ -12,3 +12,24 @@
 [2025-02-09T20:47:25.197+0000] {logging_mixin.py:190} INFO - [2025-02-09T20:47:25.196+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-02-09T20:47:25.211+0000] {logging_mixin.py:190} INFO - [2025-02-09T20:47:25.211+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
 [2025-02-09T20:47:25.232+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.560 seconds
+[2025-02-09T20:47:55.872+0000] {processor.py:186} INFO - Started process (PID=52) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2025-02-09T20:47:55.875+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2025-02-09T20:47:55.877+0000] {logging_mixin.py:190} INFO - [2025-02-09T20:47:55.877+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2025-02-09T20:47:56.204+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2025-02-09T20:47:56.222+0000] {logging_mixin.py:190} INFO - [2025-02-09T20:47:56.221+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-09T20:47:56.233+0000] {logging_mixin.py:190} INFO - [2025-02-09T20:47:56.233+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2025-02-09T20:47:56.246+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.378 seconds
+[2025-02-09T20:48:26.356+0000] {processor.py:186} INFO - Started process (PID=61) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2025-02-09T20:48:26.360+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2025-02-09T20:48:26.361+0000] {logging_mixin.py:190} INFO - [2025-02-09T20:48:26.361+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2025-02-09T20:48:26.684+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2025-02-09T20:48:26.701+0000] {logging_mixin.py:190} INFO - [2025-02-09T20:48:26.701+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-09T20:48:26.713+0000] {logging_mixin.py:190} INFO - [2025-02-09T20:48:26.713+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2025-02-09T20:48:26.727+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.375 seconds
+[2025-02-09T20:48:56.951+0000] {processor.py:186} INFO - Started process (PID=70) to work on /opt/airflow/dags/test_spark_clickhouse.py
+[2025-02-09T20:48:56.952+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_spark_clickhouse.py for tasks to queue
+[2025-02-09T20:48:56.953+0000] {logging_mixin.py:190} INFO - [2025-02-09T20:48:56.953+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_spark_clickhouse.py
+[2025-02-09T20:48:57.280+0000] {processor.py:925} INFO - DAG(s) 'spark_clickhouse_example' retrieved from /opt/airflow/dags/test_spark_clickhouse.py
+[2025-02-09T20:48:57.299+0000] {logging_mixin.py:190} INFO - [2025-02-09T20:48:57.299+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-09T20:48:57.310+0000] {logging_mixin.py:190} INFO - [2025-02-09T20:48:57.310+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_clickhouse_example to None, run_after=None
+[2025-02-09T20:48:57.322+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_spark_clickhouse.py took 0.376 seconds
