@@ -180,3 +180,17 @@
 [2025-02-26T19:57:36.063+0000] {logging_mixin.py:190} INFO - [2025-02-26T19:57:36.063+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-02-26T19:57:36.074+0000] {logging_mixin.py:190} INFO - [2025-02-26T19:57:36.074+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_example to None, run_after=None
 [2025-02-26T19:57:36.087+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/spark_example.py took 0.056 seconds
+[2025-02-26T19:58:06.371+0000] {processor.py:186} INFO - Started process (PID=268) to work on /opt/airflow/dags/spark_example.py
+[2025-02-26T19:58:06.377+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/spark_example.py for tasks to queue
+[2025-02-26T19:58:06.379+0000] {logging_mixin.py:190} INFO - [2025-02-26T19:58:06.378+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/spark_example.py
+[2025-02-26T19:58:06.384+0000] {processor.py:925} INFO - DAG(s) 'spark_example' retrieved from /opt/airflow/dags/spark_example.py
+[2025-02-26T19:58:06.405+0000] {logging_mixin.py:190} INFO - [2025-02-26T19:58:06.405+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T19:58:06.417+0000] {logging_mixin.py:190} INFO - [2025-02-26T19:58:06.417+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_example to None, run_after=None
+[2025-02-26T19:58:06.431+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/spark_example.py took 0.065 seconds
+[2025-02-26T19:58:36.709+0000] {processor.py:186} INFO - Started process (PID=277) to work on /opt/airflow/dags/spark_example.py
+[2025-02-26T19:58:36.711+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/spark_example.py for tasks to queue
+[2025-02-26T19:58:36.712+0000] {logging_mixin.py:190} INFO - [2025-02-26T19:58:36.712+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/spark_example.py
+[2025-02-26T19:58:36.718+0000] {processor.py:925} INFO - DAG(s) 'spark_example' retrieved from /opt/airflow/dags/spark_example.py
+[2025-02-26T19:58:36.737+0000] {logging_mixin.py:190} INFO - [2025-02-26T19:58:36.737+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T19:58:36.749+0000] {logging_mixin.py:190} INFO - [2025-02-26T19:58:36.749+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_example to None, run_after=None
+[2025-02-26T19:58:36.762+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/spark_example.py took 0.057 seconds
